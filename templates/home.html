@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleep Disorder Prediction Project</title>
+  <style>
+    body {
+      background-image: url('bb.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      
+
+      
+     
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #020102;
+      background-color: #9cf1dc;
+      border-radius: 8px;
+      box-shadow: 0 10px 10px rgba(0, 0.2, 0.8, 0.8);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #b6fff9;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] { 
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00614c;
+
+    }
+
+    label {
+      font-weight: bold; /* Make the labels bold */
+    }
+
+     /* Use Flexbox to display form elements side by side */
+     .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .form-group label {
+      flex: 1;
+      min-width: 100px;
+      margin-right: 10px;
+    }
+
+    .form-group select,
+    .form-group input[type="text"] {
+      flex: 2;
+      min-width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+        color: #a70600;;
+    }
+
+  </style>
+
+
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+        <center><h2>YOUR SLEEP HEALTH PREDICTION FORM</h2></center>
+        <form method="get" action="/predicted_disorder">
+            <div class="form-group">
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="Male" name="Gender" value="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label></div><br>
+
+            <div class="form-group">
+            <label for="Age">Age</label></br>
+            <input type="text" id="Age" name="Age" placeholder="Enter your Age" required></div></br>
+
+            <div class="form-group">
+            <label for="Sleep_Duration">Sleep Duration</label>
+            <input type="text" id="Sleep_Duration" name="Sleep_Duration" placeholder="Enter your Sleep Duration" required></div></br>
+  
+            <div class="form-group">
+            <label for="Quality_of_Sleep">Quality of Sleep</label></br>
+            <input type="text" id="Quality_of_Sleep" name="Quality_of_Sleep" placeholder="Enter your Quality Of Sleep" required></div></br>
+  
+            <div class="form-group">
+            <label for="Physical_Activity_Level">Physical Activity Level</label></br>
+            <input type="text" id="Physical_Activity_Level" name="Physical_Activity_Level" placeholder="Enter your Physical Activity Level" required></div></br>
+  
+            <div class="form-group">
+            <label for="Stress_Level">Stress Level</label></br>
+            <input type="text" id="Stress_Level" name="Stress_Level" placeholder="Enter your Stress Level" required></div></br>
+  
+            <div class="form-group">
+            <label for="BMI_Category">BMI Category</label>
+            <select id="BMI_Category" name="BMI_Category" required>
+            <option value="">Select Your BMI Category</option>
+            <option value="Normal">Normal</option>
+            <option value="Overweight">Overweight</option>
+            <option value="Normal Weight">Normal Weight</option>
+            <option value="Obese">Obese</option>
+            </select></div><br>
+
+            <div class="form-group">
+            <label for="Blood_Pressure">Blood Pressure</label>
+            <select id="Blood_Pressure" name="Blood_Pressure" required>
+            <option value="">Select Your Blood Pressure Category</option>
+            <option value="Normal">Normal</option>
+            <option value="Elevated">Elevated</option>
+            <option value="High Blood Pressure (Stage 1)">High Blood Pressure (Stage 1)</option>
+            <option value="High Blood Pressure (Stage 2)">High Blood Pressure (Stage 2)</option>
+            </select></div><br>
+
+            <div class="form-group">
+            <label for="Heart_Rate">Heart Rate</label></br>
+            <input type="text" id="Heart_Rate" name="Heart_Rate" placeholder="Enter your Heart Rate" required></div></br>
+
+            <div class="form-group">
+            <label for="Daily_Steps">Daily Steps</label></br>
+            <input type="text" id="Daily_Steps" name="Daily_Steps" placeholder="Enter your Daily Steps" required></div></br>
+
+
+            <div class="form-group">
+            <label for="Occupation">Occupation</label>
+            <select id="Occupation" name="Occupation" required>
+            <option value="">Select Your Occupation</option>
+            <option value="Accountant">Accountant</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Manager">Manager</option>
+            <option value="Nurse">Nurse</option>
+            <option value="Sales Representative">Sales Representative</option>
+            <option value="Salesperson">Salesperson</option>
+            <option value="Scientist">Scientist</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Teacher">Teacher</option>
+           </select><br><br></div><br>
+
+
+    
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+  
+</body>
+</html>

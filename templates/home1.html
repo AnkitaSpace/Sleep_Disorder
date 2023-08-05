@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleep Disorder Prediction Project</title>
+  <style>
+    body {
+      background-image: url('bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      
+
+      
+     
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #020102;
+      background-color: #00e7ad;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #b6fff9;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] { 
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+      
+    }
+
+    label {
+      font-weight: bold; /* Make the labels bold */
+    }
+
+  </style>
+
+
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Sleep Health Prediction Form</Form></h2>
+        <form method="get" action="/predicted_disorder">
+          <label for="Gender">Gender</label>
+          <input type="text" id="Gender" name="Gender" placeholder="Gender" required>
+
+          <label for="Age">Age</label></br>
+          <input type="text" id="Age" name="Age" placeholder="Enter your Age" required></br>
+
+          <label for="Sleep_Duration">Sleep Duration</label></br>
+          <input type="text" id="Sleep_Duration" name="Sleep_Duration" placeholder="Enter your Sleep Duration" required></br>
+
+          <label for="Quality_of_Sleep">Quality of Sleep</label></br>
+          <input type="text" id="Quality_of_Sleep" name="Quality_of_Sleep" placeholder="Enter your Quality Of Sleep" required></br>
+
+          <label for="Physical_Activity_Level">Physical Activity Level</label></br>
+          <input type="text" id="Physical_Activity_Level" name="Physical_Activity_Level" placeholder="Enter your Physical Activity Level" required></br>
+
+          <label for="Stress_Level">Stress Level</label></br>
+          <input type="text" id="Stress_Level" name="Stress_Level" placeholder="Enter your Stress Level" required></br>
+
+          <label for="BMI_Category">BMI Category</label></br>
+          <input type="text" id="BMI_Category" name="BMI_Category" placeholder="Enter your BMI Category" required></br>
+
+          <label for="Blood_Pressure">Blood Pressure</label></br>
+          <input type="text" id="Blood_Pressure" name="Blood_Pressure" placeholder="Enter your Blood Pressure" required></br>
+
+          <label for="Heart_Rate">Heart Rate</label></br>
+          <input type="text" id="Heart_Rate" name="Heart_Rate" placeholder="Enter your Heart Rate" required></br>
+
+          <label for="Daily_Steps">Daily Steps</label></br>
+          <input type="text" id="Daily_Steps" name="Daily_Steps" placeholder="Enter your Daily Steps" required></br>
+
+          <label for="Occupation">Occupation</label></br>
+          <input type="text" id="Occupation" name="Occupation" placeholder="Enter your Occupation" required></br>
+
+
+    
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+  
+</body>
+</html>
